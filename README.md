@@ -74,18 +74,6 @@ pip install poetry
 brew install pre-commit
 ```
 
-## Install PostgresSQL
-
-```bash
-brew install postgresql@16
-```
-
-## Install Shmig
-
-*Instructions:* https://github.com/mbucc/shmig
-
-Add shmig folder to your path so that the `shmig` executable is discoverable.
-
 # Install Project
 
 ## Initialize python environment
