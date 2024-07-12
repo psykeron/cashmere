@@ -1,0 +1,31 @@
+repos:
+  - repo: local
+    hooks:
+    - id: ruff
+      name: ruff
+      stages: [commit]
+      language: system
+      entry: ruff check --fix
+      pass_filenames: true
+      files: \.py$
+    - id: black
+      name: black
+      stages: [commit]
+      language: system
+      entry: black .
+      pass_filenames: true
+      files: \.py$
+    - id: isort
+      name: isort
+      stages: [commit]
+      language: system
+      entry: isort .
+      pass_filenames: true
+      files: \.py$
+    - id: mypy
+      name: mypy
+      stages: [commit]
+      language: system
+      entry: mypy --ignore-missing-imports
+      pass_filenames: true
+      files: \.py$
