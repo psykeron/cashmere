@@ -16,7 +16,6 @@ When an event is emitted, all subscribers will receive a copy of the event.
 All subscribers are expected to be Async functions.
 
 # What we don't have today
-- An event store, aside from SNS's 14 day archive.
 - Memory and Concurrency management options.
 
 # What we do have
