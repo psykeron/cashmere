@@ -1,5 +1,5 @@
 <p align="center">
-<img src="assets/cashmere.png" width="400" height="400"/>
+<img src="assets/cashmere.png" width="128" height="128" />
 </p>
 
 # Summary
@@ -15,17 +15,17 @@ When an event is emitted, all subscribers will receive a copy of the event.
 
 All subscribers are expected to be Async functions.
 
-# What we don't have today
-- Memory and Concurrency management options.
-
 # What we do have
 - Clear decoupling between clients and consumers.
 - An interface that can support other back-ends in the future (e.g. RMQ, Redis.)
 - A simple dependency injection system for subscribing handlers.
 
+# What we don't have today
+- Memory and Concurrency management options.
+
 # What's planned next:
-1. Add a CashmereCollection class to combine and run multiple Cashmere apps at once.
-2. Add a graceful shutdown solution for ctrl+c and sig-term moments.
+1. Add a graceful shutdown solution for ctrl+c and sig-term moments.
+2. Support metrics via open-telemetry. 
 
 --
 
